@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Juegos indie</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+	<link href="css/estilo.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://m.w3newbie.com/you-tube.css">
+</head>
+
+<body>
+
+	<!-- Navigation -->
+	<nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+		<div class="container-fluid">
+			<a class="navbar-brand" href="#"><img src="img/logo.png" alt="logo_pagina"></a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarResponsive">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item active">
+						<a class="nav-link" href="#">Inicio</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="paginas/galeria.html">Catalogo</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="paginas/formulario.html">Sugerencias</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<!--- Carousel -->
+	<div id="slides" class="carousel slide" data-ride="carousel">
+		<ul class="carousel-indicators">
+			<li data-target="#slides" data-slide-to="0" class="active"></li>
+			<li data-target="#slides" data-slide-to="1"></li>
+			<li data-target="#slides" data-slide-to="2"></li>
+		</ul>
+		<div class="carousel-inner">
+			<div class="carousel-item active">
+				<img src="img/background1.jpg" alt="undertale">
+				<div class="carousel-caption">
+					<h3 class="hide-header">"You're filled with determination"</h3>
+					<button type="button" class="btn btn-outline-light btn-lg btn-responsive"
+						onclick="window.open('https://www.youtube.com/watch?v=TIokr8jJPkM')">SOUNDTRACK</button>
+					<button type="button" class="btn btn-primary btn-lg btn-responsive"> INFORMACIÓN</button>
+				</div>
+			</div>
+			<div class="carousel-item">
+				<img src="img/background2.jpg" alt="celeste">
+				<div class="carousel-caption">
+					<h3 class="hide-header">"I'm Part of You"</h3>
+					<button type="button" class="btn btn-outline-light btn-lg btn-responsive"
+						onclick="window.open('https://www.youtube.com/watch?v=2JsYHpiH2xs')">SOUNDTRACK</button>
+					<button type="button" class="btn btn-primary btn-lg btn-responsive"> INFORMACIÓN</button>
+				</div>
+			</div>
+			<div class="carousel-item">
+				<img src="img/background3.jpg" alt="cuphead">
+				<div class="carousel-caption">
+					<h3 class="hide-header">"Don't deal with the devil"</h3>
+					<button type="button" class="btn btn-outline-light btn-lg btn-responsive"
+						onclick="window.open('https://www.youtube.com/watch?v=eL6uzgw_ifg')">SOUNDTRACK
+					</button>
+					<button type="button" class="btn btn-primary btn-lg btn-responsive"> INFORMACIÓN</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!--- Welcome -->
+
+	<div class="container-fluid padding">
+		<div class="row welcome text-center">
+			<div class="col-12">
+				<h1 class="display-4">Bienvenido al mundo indie.</h1>
+			</div>
+			<hr>
+			<div class="col-12">
+				<p class="lead">Un sitio web donde podrás encontrar información interesante sobre
+					tus videojuegos indie favoritos.</p>
+			</div>
+		</div>
+	</div>
+
+	<!--- 3 Columnas -->
+
+	<div class="container-fluid padding">
+		<div class="row text-center padding">
+			<div class="col-xs-12 col-sm-6 col-md-4">
+				<i class="fas fa-user-secret"></i>
+				<h3>DESARROLLADOR</h3>
+				<p>Descrube quién se encuentra detrás de cada obra.</p>
+			</div>
+			<div class="col-xs-12 col-sm-6 col-md-4">
+				<i class="fas fa-music"></i>
+				<h3>SOUNDTRACK</h3>
+				<p>Disfruta del soundtrack que acompaña a cada aventura.</p>
+			</div>
+			<div class="col-sm-12 col-md-4">
+				<i class="fas fa-code"></i>
+				<h3>BACKEND</h3>
+				<p>Deléitate con información de la tecnología utilizada detrás de cada juego.</p>
+			</div>
+		</div>
+		<hr class="my-4">
+	</div>
+
+	<!--- Footer -->
+
+	<footer>
+		<div class="container-fluid padding">
+			<div class="row text-center">
+				<div class="col-md-4">
+					<img src="img/logo.png" alt="logo_pagina">
+					<hr class="light">
+					<p>mundoindie@gmail.com</p>
+					<p>Padre Alonso de Ovalle 868</p>
+					<p>Santiago, 8320000</p>
+				</div>
+				<div class="col-md-4 hide-header">
+					<hr class="light">
+					<h5>Horario de contacto</h5>
+					<hr class="light">
+					<p>Lun-Vie: 9am - 5pm</p>
+					<p>Sabado: 10am - 4pm</p>
+					<p>Domingo: 11am - 6pm</p>
+				</div>
+				<div class="col-md-4 hide-header">
+					<hr class="light">
+					<h5>Nuestro equipo</h5>
+					<hr class="light">
+					<p>Gustavo Oliva</p>
+					<p>Javier Velásquez</p>
+					<p>Tomás Núñez</p>
+				</div>
+				<div class="col-12">
+					<hr class="light">
+					<h5>&copy;  mundoindie.com</h5>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+
+</body>
+
+</html>

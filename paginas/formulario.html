@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Formulario</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+	<link href="../css/estilo_formulario.css" rel="stylesheet">
+	<link href="../css/estilo.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://m.w3newbie.com/you-tube.css">
+</head>
+
+<body>
+
+	<!-- Navigation -->
+	<nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+		<div class="container-fluid">
+			<a class="navbar-brand" href="#"><img src="../img/logo.png" alt="logo_pagina"></a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarResponsive">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item">
+						<a class="nav-link" href="../index.html">Inicio</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="../paginas/galeria.html">Catalogo</a>
+					</li>
+					<li class="nav-item active">
+						<a class="nav-link" href="#">Sugerencias</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<div class="bg-img">
+		<form action="none" class="formulario" method="POST" onsubmit="return validar();" autocomplete="off">
+			<h1 class="formulario__titulo">Sugerencias</h1>
+			<input type="text" id="Nombre" onkeydown="validarNombre()" value="" class="formulario__input" required>
+			<label for="Nombre" class="formulario__label">Nombre</label>
+			<input type="email" id="Email" class="formulario__input" required>
+			<label for="Email" class="formulario__label">Email</label>
+			<input type="text" id="Juego" class="formulario__input" required>
+			<label for="Juego" class="formulario__label">Juego</label>
+			<input type="text" id="Comentario" class="formulario__input" required>
+			<label for="Comentario" class="formulario__label">Comentario</label>
+			<input type="text" id="Llegada" class="formulario__input" required>
+			<label for="Llegada" class="formulario__label">¿Como llegaste a Mundo Indie?</label>
+			<input type="submit" class="formulario__submit" value="Envianos tu sugerencia!">
+		</form>
+	</div>
+	
+
+	<!--- Footer -->
+
+	<footer>
+		<div class="container-fluid padding">
+			<div class="row text-center">
+				<div class="col-md-4">
+					<img src="../img/logo.png" alt="logo_pagina">
+					<hr class="light">
+					<p>mundoindie@gmail.com</p>
+					<p>Padre Alonso de Ovalle 868</p>
+					<p>Santiago, 8320000</p>
+				</div>
+				<div class="col-md-4 hide-header">
+					<hr class="light">
+					<h5>Horario de contacto</h5>
+					<hr class="light">
+					<p>Lun-Vie: 9am - 5pm</p>
+					<p>Sabado: 10am - 4pm</p>
+					<p>Domingo: 11am - 6pm</p>
+				</div>
+				<div class="col-md-4 hide-header">
+					<hr class="light">
+					<h5>Nuestro equipo</h5>
+					<hr class="light">
+					<p>Gustavo Oliva</p>
+					<p>Javier Velásquez</p>
+					<p>Tomás Núñez</p>
+				</div>
+				<div class="col-12">
+					<hr class="light">
+					<h5>&copy; mundoindie.com</h5>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<script src="../js/validaciones_formulario.js">
+	</script>
+</body>
+
+</html>
